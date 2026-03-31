@@ -1,8 +1,8 @@
 import React from "react";
-import "./Project.css"
-import swiggy from "../images/swiggy.png"
-import hms from "../images/hms.png"
-import todo from "../images/todo.png"
+import "./Project.css";
+import swiggy from "../images/swiggy.png";
+import hms from "../images/hms.png";
+import todo from "../images/todo.png";
 function Projectcards() {
     return (
         <div className="projects" id="projects">
