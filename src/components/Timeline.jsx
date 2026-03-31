@@ -1,5 +1,5 @@
 import React from "react";
-import "./timeline.css";
+import "./Timeline.css";
 
 const glassStyle = {
   background: "rgba(255, 255, 255, 0.08)",
