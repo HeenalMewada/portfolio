@@ -142,7 +142,7 @@
     padding-left: 0;
   }
   .timeline-dot {
-    left: 50%;
+    left: 5%;
     transform: translateX(-50%);
     top: -7px;
   }
