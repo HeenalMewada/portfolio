@@ -146,15 +146,15 @@
   }
   .header .navlink {
     gap: 2px;
-    min-width: 170px;
+    min-width: 200px;
   }
   .header .navlink a {
-    font-size: 16px;
+    font-size: 14px;
     padding: 2px 4px;
   }
   .btn-resume {
     /* padding: 2px 2px; */
-    font-size: 14px;
+    font-size: 10px;
     /* min-width: 30px; */
   }
 }
