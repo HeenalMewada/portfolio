@@ -10,12 +10,13 @@ import Timeline from "./components/Timeline.jsx";
 function App(){
   return(
 <>
-      <Header></Header>
+      {/* <Header></Header>
       <Hero_section></Hero_section>
       <Projectcards></Projectcards>
       <Skills></Skills>
       <Timeline></Timeline>
-      <Contact></Contact>
+      <Contact></Contact> */}
+      <h1>Hii</h1>
     </>
   )
 }
