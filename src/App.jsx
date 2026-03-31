@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Hero_section from "./components/Hero_section";
-import Footer from "./components/Footer";
 import Projectcards from "./components/Projectcards";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
