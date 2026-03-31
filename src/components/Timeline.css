@@ -146,6 +146,9 @@
   .timeline-item {
     padding-left: 0;
   }
+  .timeline-content{
+    margin-left: 5px;
+  }
 
   .timeline-dot {
     left: 50%;
