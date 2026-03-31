@@ -1,6 +1,5 @@
 import React from "react";
-import "./Header.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Header.css";cd 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Header() {

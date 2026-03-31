@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./components/Header";
-import About from "./components/About";
-import Hero_section from "./components/Hero_section";
-import Projectcards from "./components/Projectcards";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Timeline from "./components/Timeline";
+import Header from "./components/Header.jsx";
+import About from "./components/About.jsx";
+import Hero_section from "./components/Hero_section.jsx";
+import Projectcards from "./components/Projectcards.jsx";
+import Skills from "./components/Skills.jsx";
+import Contact from "./components/Contact.jsx";
+import Timeline from "./components/Timeline.jsx";
 
 function App(){
   return(
