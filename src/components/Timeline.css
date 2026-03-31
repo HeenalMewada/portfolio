@@ -1,0 +1,186 @@
+/* ============================================
+   HEENAL'S PORTFOLIO — Timeline Section CSS
+   Theme: Cosmic Purple Glassmorphism
+   (Global styles are in index.css)
+   ============================================ */
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  max-width: 700px;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+
+/* Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #60a5fa, #a855f7);
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background: #60a5fa;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.7),
+              0 0 20px rgba(96, 165, 250, 0.4);
+}
+
+/* Card content */
+.timeline .timeline-item .timeline-content {
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  padding: 16px 20px !important;
+  transition: all 0.3s ease;
+  color: var(--text-primary) !important;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Hover effect on cards */
+.timeline .timeline-item .timeline-content:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.13) !important;
+  box-shadow: 0 12px 32px rgba(96, 165, 250, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Heading at top of timeline */
+.timeline-heading {
+  background: linear-gradient(to right, #ffffff, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Timeline title */
+.timeline-title {
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Company name */
+.timeline-company {
+  color: #60a5fa !important;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Duration */
+.timeline-duration {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* List points */
+.timeline-points {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.timeline-points li {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .timeline {
+    padding-left: 15px;
+  }
+  .timeline-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .timeline-title {
+    font-size: 16px;
+  }
+  .timeline-duration {
+    font-size: 12px;
+  }
+  .timeline-points {
+    padding-left: 15px;
+  }
+  .timeline-points li {
+    font-size: 13px;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .timeline-dot {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -7px;
+  }
+  .timeline-content {
+    max-width: 90%;
+  }
+}
+
+@media(max-width: 768px) {
+  .timeline {
+    padding-left: 10px;
+  }
+  .timeline-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .timeline-title {
+    font-size: 14px;
+  }
+  .timeline-duration {
+    font-size: 11px;
+  }
+  .timeline-points {
+    padding-left: 10px;
+  }
+  .timeline-points li {
+    font-size: 12px;
+  }
+  /* For smaller screens, center dots and adjust spacing */
+  .timeline-item {
+    padding-left: 0;
+  }
+  .timeline-dot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

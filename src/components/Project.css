@@ -1,0 +1,207 @@
+
+.project_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.project_card {
+  width: 330px;
+  height: 450px;
+  border-radius: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.project_card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 48px rgba(59, 130, 246, 0.25),
+              inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.project_card img {
+  width: 310px;
+  border-radius: 14px;
+  border: 1px solid var(--glass-border);
+  object-fit: cover;
+}
+
+.project_card p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* ============================================
+   SECTION TITLE — "Recent Work"
+   ============================================ */
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
+}
+.section_title{
+ text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffffff, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+/* ============================================
+   LIVE LINKS
+   ============================================ */
+
+.live_links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.live_links a {
+  text-decoration: none;
+  color: var(--text-accent);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.live_links a:hover {
+  background: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.35);
+  transform: translateY(-2px);
+}
+
+.live_links a:active {
+  transform: scale(0.97);
+}
+@media (max-width: 400px) {
+  .project_card {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.project_card {
+  width: 330px;
+  height: 450px;
+  border-radius: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer; /* Added cursor for better UX */
+}
+
+.project_card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.project_card img {
+  width: 310px;
+  border-radius: 14px;
+  border: 1px solid var(--glass-border);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project_card img:hover {
+  transform: scale(1.02);
+}
+
+.project_card p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 0 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffffff, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+/* LIVE LINKS */
+.live_links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+.live_links a {
+  text-decoration: none;
+  color: var(--text-accent);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.live_links a:hover {
+  background: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.35);
+  transform: translateY(-2px);
+}
+
+.live_links a:active {
+  transform: scale(0.97);
+}

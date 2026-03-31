@@ -1,0 +1,57 @@
+:root {
+  --bg-primary: #1A1440;
+  --bg-gradient: linear-gradient(135deg, #1A1440 0%, #3D2F7A 40%, #1E3A5F 100%);
+  --glass-bg: rgba(255, 255, 255, 0.10);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-blur: blur(16px);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --accent: #3b82f6;
+  --accent-dark: #2563eb;
+  --accent-glow: rgba(59, 130, 246, 0.35);
+  --text-primary: #f1f5f9;
+  --text-secondary: rgba(255, 255, 255, 0.55);
+  --text-accent: #60a5fa;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::before {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #7C3AED 0%, transparent 70%);
+  top: -100px;
+  left: -100px;
+  opacity: 0.45;
+  filter: blur(80px);
+}
+
+body::after {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #2563EB 0%, transparent 70%);
+  bottom: -80px;
+  right: -80px;
+  opacity: 0.35;
+  filter: blur(80px);
+}

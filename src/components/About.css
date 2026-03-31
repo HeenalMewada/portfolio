@@ -1,0 +1,35 @@
+.profile-img {
+width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  border: 4px solid whitesmoke;
+  
+  top: -20px; /* makes avatar pop out */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  
+}
+.about_container{
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  gap: 30px;
+  position: relative;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+.avatar_container{
+  flex-shrink: 1;
+  position: relative;
+  
+}
+  
+
+.about_section p{
+  text-align: justify;
+}

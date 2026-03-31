@@ -1,0 +1,95 @@
+/* ============================================
+   HEENAL'S PORTFOLIO — Contact Section CSS
+   Theme: Cosmic Purple Glassmorphism
+   (Global styles are in index.css)
+   ============================================ */
+
+.contact {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  padding: 50px 20px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffffff, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+/* ============================================
+   ICONS CONTAINER
+   ============================================ */
+
+.contact-wave-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   ICONS
+   ============================================ */
+
+.contact-wave-icon {
+  font-size: 2rem;
+  color: #60a5fa;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: wave 1.2s infinite alternate;
+}
+
+.contact-wave-icon:hover {
+  color: #ffffff;
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.8));
+}
+
+@keyframes wave {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ============================================
+   TOOLTIP
+   ============================================ */
+
+.contact-wave-icon .tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 12, 41, 0.9);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.contact-wave-icon:hover .tooltip {
+  opacity: 1;
+}

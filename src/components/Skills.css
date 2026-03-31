@@ -1,0 +1,100 @@
+.skills-section {
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.skill_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   GRADIENT BORDER WRAPPER
+   ============================================ */
+
+.gradient-card {
+  padding: 2px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #60a5fa, #a855f7);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gradient-card:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #22d3ee, #a855f7);
+  box-shadow: 0 12px 40px rgba(168, 85, 247, 0.4);
+}
+
+/* ============================================
+   INNER CARD — Glass
+   ============================================ */
+
+.card-inner {
+  background: rgba(15, 10, 40, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 14px;
+  padding: 25px 20px;
+  width: 250px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ============================================
+   CARD CONTENT
+   ============================================ */
+
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+}
+
+.card h5 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(to right, #ffffff, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 25px;
+}
+
+.card li {
+  list-style-type: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.card li:hover {
+  color: var(--text-accent);
+}
+.dark-icon {
+  filter: brightness(0) invert(1);
+}

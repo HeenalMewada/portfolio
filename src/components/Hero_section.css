@@ -1,0 +1,142 @@
+
+.hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-top: 100px;
+  background: transparent; /* body gradient shows through */
+  position: relative;
+  z-index: 1;
+}
+
+.hero_section .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero_section h2 {
+  color: var(--text-primary);
+}
+
+.hero_section p {
+  color: var(--text-secondary);
+}
+
+.typingText {
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 24px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.buttons button:first-child {
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 16px var(--accent-glow);
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.buttons button:first-child:hover {
+  background-color: var(--accent-dark);
+  box-shadow: 0 0 24px var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+.buttons button:first-child:active {
+  transform: scale(0.97);
+}
+
+.buttons button:last-child {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  color: var(--text-accent);
+  border: 1px solid var(--glass-border);
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttons button:last-child:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.buttons button:last-child:active {
+  transform: scale(0.97);
+}
+
+/* ============================================
+   CODEBOX — dark intentionally
+   ============================================ */
+
+.codebox-wrapper {
+  width: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  animation: codeFloat 5s ease-in-out infinite;
+}
+
+.codebox-header {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  background: rgba(30, 41, 59, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.right {
+  margin-right: 50px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.red    { background: #ef4444; }
+.yellow { background: #f59e0b; }
+.green  { background: #22c55e; }
+
+.codebox-body {
+  padding: 15px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.keyword { color: #60a5fa; }
+.key     { color: #38bdf8; }
+.string  { color: #34d399; }
+
+@keyframes codeFloat {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
