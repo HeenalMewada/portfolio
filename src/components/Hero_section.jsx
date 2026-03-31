@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hero_section.css";
-import {Link} from "react-router-dom";
 import TypingText from "./Typing";
 
 
