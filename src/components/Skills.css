@@ -120,9 +120,7 @@
   }
 }
 
-/* ============================================
-   RESPONSIVE — Mobile (max-width: 768px)
-   ============================================ */
+
 
 @media (max-width: 768px) {
   .skills-section {
@@ -168,33 +166,3 @@
   }
 }
 
-/* ============================================
-   RESPONSIVE — Small Mobile (max-width: 480px)
-   ============================================ */
-
-@media (max-width: 480px) {
-  .skills-section {
-    padding: 24px 12px;
-  }
-
-  .gradient-card {
-    max-width: 100%;
-  }
-
-  .card-inner {
-    padding: 16px 12px;
-  }
-
-  .card h5 {
-    font-size: 13px;
-  }
-
-  .card ul {
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .card li {
-    font-size: 12px;
-  }
-}
