@@ -141,7 +141,7 @@
     padding: 5px;
   }
   .header h3 {
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 7px;
   }
   .header .navlink {
@@ -149,12 +149,12 @@
     min-width: 170px;
   }
   .header .navlink a {
-    font-size: 10px;
+    font-size: 16px;
     padding: 2px 4px;
   }
   .btn-resume {
     /* padding: 2px 2px; */
-    font-size: 10px;
+    font-size: 14px;
     /* min-width: 30px; */
   }
 }
