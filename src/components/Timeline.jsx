@@ -37,7 +37,7 @@ const timelineData = [
   },
   {
     title: "Office Admin",
-    company: "Golden Manpower consultants",
+    company: "Adventure Education Tours and Travels",
     duration: "2022 - Present",
     type: "non-tech",
     points: [

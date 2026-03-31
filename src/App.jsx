@@ -6,10 +6,12 @@ import Projectcards from "./components/Projectcards.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 import Timeline from "./components/Timeline.jsx";
+import CursorSparkle from "./components/CursorSparkle.jsx";
 
 function App(){
   return(
 <>
+<CursorSparkle></CursorSparkle>
       <Header></Header>
       <Hero_section></Hero_section>
       <Projectcards></Projectcards>

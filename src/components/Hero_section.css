@@ -1,11 +1,10 @@
-
 .hero_section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 60px;
   padding-top: 100px;
-  background: transparent; /* body gradient shows through */
+  background: transparent;
   position: relative;
   z-index: 1;
 }
@@ -15,15 +14,19 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 2px;
+  gap: 10px;
 }
 
 .hero_section h2 {
   color: var(--text-primary);
+  font-size: 40px;
+  
 }
 
 .hero_section p {
   color: var(--text-secondary);
+  font-size: 20px;
+
 }
 
 .typingText {
@@ -31,12 +34,18 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 24px;
+  font-size: 27px;
 }
 
 /* ============================================
    BUTTONS
    ============================================ */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 
 .buttons button:first-child {
   background-color: var(--accent);
@@ -139,4 +148,104 @@
   0%   { transform: translateY(0px); }
   50%  { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
+}
+
+/* ============================================
+   RESPONSIVE — Tablet (max-width: 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .hero_section {
+    padding-left: 40px;
+    padding-top: 80px;
+    gap: 30px;
+  }
+
+  .right {
+    margin-right: 30px;
+  }
+
+  .codebox-wrapper {
+    width: 220px;
+  }
+
+  .codebox-body {
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — Mobile (max-width: 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero_section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    gap: 40px;
+  }
+
+  .hero_section .left {
+    align-items: center;
+  }
+
+  .typingText {
+    font-size: 20px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .right {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .codebox-wrapper {
+    width: 100%;
+    max-width: 300px;
+    animation: none;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — Small Mobile (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  .hero_section {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 50px;
+  }
+
+  .typingText {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons button:first-child,
+  .buttons button:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  .codebox-wrapper {
+    max-width: 100%;
+  }
+
+  .codebox-body {
+    font-size: 11px;
+    padding: 12px;
+  }
 }

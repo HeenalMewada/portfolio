@@ -95,6 +95,106 @@
 .card li:hover {
   color: var(--text-accent);
 }
+
 .dark-icon {
   filter: brightness(0) invert(1);
+}
+
+/* ============================================
+   RESPONSIVE — Tablet (max-width: 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .skills-section {
+    padding: 40px 20px;
+  }
+
+  .skill_cards {
+    gap: 16px;
+  }
+
+  .card-inner {
+    width: 220px;
+    height: auto;
+    min-height: 200px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — Mobile (max-width: 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 30px 16px;
+  }
+
+  .skill_cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .gradient-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .gradient-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card-inner {
+    width: 100%;
+    height: auto;
+    padding: 20px 16px;
+  }
+
+  .card {
+    gap: 16px;
+  }
+
+  .card h5 {
+    font-size: 14px;
+  }
+
+  .card ul {
+    gap: 12px;
+    padding-right: 0;
+  }
+
+  .card li {
+    font-size: 13px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — Small Mobile (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 24px 12px;
+  }
+
+  .gradient-card {
+    max-width: 100%;
+  }
+
+  .card-inner {
+    padding: 16px 12px;
+  }
+
+  .card h5 {
+    font-size: 13px;
+  }
+
+  .card ul {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .card li {
+    font-size: 12px;
+  }
 }

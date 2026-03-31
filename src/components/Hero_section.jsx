@@ -14,8 +14,8 @@ function Hero_section() {
 
     <div className="hero_section">
       <div className="left">
-        <h2 className="text-5xl font-bold">
-          Hii.. 👋  I'm Heenal
+        <h2>
+          Hii.. 👋  I'm Heenal Mewada
         </h2>
 
         <div className="typingText">
@@ -23,7 +23,7 @@ function Hero_section() {
         </div>
 
 
-        <p className="text-gray-600">
+        <p>
           Builds scalable web apps
         </p>
 
