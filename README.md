@@ -49,7 +49,6 @@ A modern, fully responsive developer portfolio built with React, Vite, and Frame
 ## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js v18+
 - npm
 
 ### Installation
