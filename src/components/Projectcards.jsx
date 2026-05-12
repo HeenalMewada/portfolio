@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.css";
 import { motion } from "framer-motion";
 import swiggy from "../images/swiggy.png";
-import hms from "../images/hms.png";
+import tracker from "../images/tracker.png";
 import todo from "../images/todo.png";
 
 const containerVariants = {
@@ -81,17 +81,23 @@ function Projectcards() {
           variants={cardVariants}
           whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
         >
-          <img src={hms} alt="HMS" />
-          <div className="title">HMS | Fullstack (in progress)</div>
+          <img src={tracker} alt="expense" style={{height:"200px"}} />
+          <div className="title">Expense Tracker | Fullstack </div>
           <div className="description">
             <p>
-              Web-based system to manage doctor appointments, patient records,
-              and scheduling.
+              Simple Expense Tracker to manage income and expenses with category-wise insights
             </p>
           </div>
           <div className="live_links">
             <a
-              href="https://github.com/HeenalMewada"
+              href=""
+              target="_blank"
+              className="btn btn-primary"
+            >
+              Live
+            </a>
+            <a
+              href="https://github.com/HeenalMewada/expense_tracker"
               target="_blank"
               className="btn btn-success"
             >
@@ -116,14 +122,14 @@ function Projectcards() {
           </div>
           <div className="live_links">
             <a
-              href="https://swiggy-clone-react-ebon.vercel.app/"
+              href="https://heenalmewada.github.io/to-do_list/"
               target="_blank"
               className="btn btn-primary"
             >
               Live
             </a>
             <a
-              href="https://github.com/HeenalMewada/Swiggy_cloneReact"
+              href="https://github.com/HeenalMewada/to-do_list"
               target="_blank"
               className="btn btn-success"
             >
