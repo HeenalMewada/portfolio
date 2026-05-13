@@ -15,7 +15,7 @@ function Hero_section() {
     <div className="hero_section">
       <div className="left">
         <h2>
-          Hii.. 👋  I'm Heenal Mewada
+          Hii..   I'm Heenal Mewada
         </h2>
 
         <div className="typingText">
