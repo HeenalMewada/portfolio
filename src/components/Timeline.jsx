@@ -15,7 +15,7 @@ const glassStyle = {
 const timelineData = [
   {
     title: "Full-Stack Developer",
-    company: "Self Initiated & Projects",
+    company: "Self Initiated  Projects",
     duration: "2025 - Present",
     type: "tech",
     points: [
