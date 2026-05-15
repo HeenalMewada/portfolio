@@ -29,7 +29,9 @@ function Header() {
         >
           <FaLinkedin />  LinkedIn
         </a>
-        <a href="./Heenal Mewada CV.pdf" target="_blank">
+        <a href="/Heenal_Mewada_React_Developer_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer">
           <button className="btn-resume" >
             Resume
 
