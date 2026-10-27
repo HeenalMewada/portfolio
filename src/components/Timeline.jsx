@@ -30,7 +30,7 @@ const timelineData = [
     duration: "2025",
     type: "project",
     points: [
-      "HMS (Express + Node + MySQL)",
+      "Expense Tracker (Raect + PHP + MySQL)",
       "Swiggy Clone (Frontend + API integration)",
       "To-Do App (CRUD + Local Storage)",
     ],
