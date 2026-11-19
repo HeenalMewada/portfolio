@@ -76,14 +76,8 @@ function Skills() {
             <div className="card-inner">
               <h5 className="mt-2">Backend</h5>
               <ul>
-                <li><img src={node} alt="node" /><br />Node.js</li>
-                <li>
-                  <img
-                    src="https://cdn.simpleicons.org/express/ffffff"
-                    alt="Express.js"
-                    width="30"
-                  /><br />Express js
-                </li>
+                
+                
                 <li><img src={php} alt="php" /><br />PHP</li>
                 <li><img src={database} alt="sql" /><br />My SQL</li>
               </ul>
